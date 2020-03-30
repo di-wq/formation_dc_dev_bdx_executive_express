@@ -5,10 +5,24 @@ const app = express()
 let connect = require("./connection.js")
 let config = require("./config.js")
 
+let mustacheExpress = require('mustache-express')
+
+app.engine("html", mustacheExpress())
+
+  app.set('view engine', 'html');
+  app.set('views', __dirname + '/views');
+  app.use(express.static(__dirname + '/public'));
+
+
 app.get('/', function (req, res) {
   res.send('Hello World!')
 
 })
+
+app.get("/hello", (req, res) => {
+  res.render('index', {name: "César"})
+})
+
 
 app.get('/todo', async (req, res) => {
 
