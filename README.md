@@ -3,14 +3,13 @@ Instructions d'installation
 
 #Windows
 
-1. Installer NodeJS
-2. Installer GitKraken
+1. Installer NodeJS https://nodejs.org/en/download/
+2. Cloner le projet :
     1. Se rendre sur github.com
         1. Se connecter
-        2. Fork le projet `Dylfaen/formation_dc_dev_react_node`
-    1. Se connecter avec Github
+        2. Fork le projet `Dylfaen/formation_dc_dev_bdx_executive_express`
     2. Cloner le projet forké sur votre compte depuis github
-3. lancer la commande `npm install` dans le répertoire du projet dans `node_src/` et dans `react_src/`
+3. lancer la commande `npm install` dans le répertoire du projet dans `node_src/`
 4. Installer mongoDB https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
 5. Lancer la commande en mode administrateur `"C:\Program Files\MongoDB\Server\4.2\bin\mongo.exe"`
 6. Lancer MongoDB compass et se connecter au server mongoDB avec `mongodb://127.0.0.1:27017/?compressors=zlib&gssapiServiceName=mongodb`
@@ -23,8 +22,7 @@ module.exports = {
     port: "3001"
 }
 ```
-8. Dans le répertoire du projet modifier `node_src/` pour lancer le serveur sur le port 3001
-9. lancer `npm start` dans `react_src/` et dans `node_src/`
+8. lancer `npm start` dans `node_src/`
 
 
 #Linux et MacOS
@@ -44,7 +42,7 @@ module.exports = {
 }
 ```
 6. Dans le répertoire du projet lancer `sudo docker-compose up`
-7. L'appli react est disponible sur `localhost:3000` et le server node sur `localhost:3001`
+7. Le server node sur `localhost:3001`
 
 
 
