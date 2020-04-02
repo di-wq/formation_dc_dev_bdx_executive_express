@@ -2,18 +2,18 @@ Instructions d'installation
 ======================
 
 #Windows
-
-1. Installer NodeJS https://nodejs.org/en/download/
-2. Cloner le projet :
+1. Installer Git https://gitforwindows.org/
+2. Installer NodeJS https://nodejs.org/en/download/
+3. Cloner le projet :
     1. Se rendre sur github.com
         1. Se connecter
         2. Fork le projet `Dylfaen/formation_dc_dev_bdx_executive_express`
     2. Cloner le projet forké sur votre compte depuis github
-3. lancer la commande `npm install` dans le répertoire du projet dans `node_src/`
-4. Installer mongoDB https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
-5. Lancer la commande en mode administrateur `"C:\Program Files\MongoDB\Server\4.2\bin\mongo.exe"`
-6. Lancer MongoDB compass et se connecter au server mongoDB avec `mongodb://127.0.0.1:27017/?compressors=zlib&gssapiServiceName=mongodb`
-7. Créer un ficher dans `node_src` nommé `config.js` contenant le code suivant 
+4. lancer la commande `npm install` dans le répertoire du projet dans `node_src/`
+5. Installer mongoDB https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+6. Lancer la commande en mode administrateur `"C:\Program Files\MongoDB\Server\4.2\bin\mongo.exe"`
+7. Lancer MongoDB compass et se connecter au server mongoDB avec `mongodb://127.0.0.1:27017/?compressors=zlib&gssapiServiceName=mongodb`
+8. Créer un ficher dans `node_src` nommé `config.js` contenant le code suivant 
 ```
 module.exports = {
     mongodb: {
